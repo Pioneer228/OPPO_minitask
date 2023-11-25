@@ -127,10 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="OPPO_minitask.cpp" />
+    <ClCompile Include="Read_Print.cpp" />
+    <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Menu.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Read_Print.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
