@@ -6,6 +6,7 @@
 void Time::SetMinutes(int minutes) {
 	mm = minutes;
 }
+
 void Time::SetHours(int hours) {
 	hh = hours;
 }
@@ -13,6 +14,7 @@ void Time::SetHours(int hours) {
 int Time::GetMinutes() const {
 	return mm;
 }
+
 int Time::GetHours() const {
 	return hh;
 }
