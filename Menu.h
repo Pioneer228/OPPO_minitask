@@ -21,6 +21,9 @@ struct Menu {
 
     void SetMenuTime(const Time& time);
 
+    static std::vector<Menu> read(std::istream& in);
+    static void write(Menu menu);
+
 	Menu(const std::string& name, const std::string& price, const Time& time);
     Menu(): name(""), price(""), menu_time() {}
 };
