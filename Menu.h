@@ -6,25 +6,31 @@
 
 struct Menu {
 	std::string name;
-	std::string price;
+	double price;
 	Time menu_time;
 
     std::string GetName() const;
 
     void SetName(const std::string& name);
 
-    std::string GetPrice() const;
+    double GetPrice() const;
 
-    void SetPrice(const std::string& price);
+    void SetPrice(const double& price);
 
     Time GetMenuTime() const;
 
     void SetMenuTime(const Time& time);
 
-    static std::vector<Menu> read(std::istream& in);
-    static void write(Menu menu);
+    void ReadMenu(std::istream& in);
+    void WriteMenu() const;
 
-	Menu(const std::string& name, const std::string& price, const Time& time);
-    Menu(): name(""), price(""), menu_time() {}
+    static bool ValidateName(const std::string& name);
+    static void InvalidName(const std::string& name);
+
+    static bool ValidatePrice(const double& price);
+    static void InvalidPrice(const double& price);
+
+	Menu(const std::string& name, const double& price, const Time& time);
+    Menu(): name(""), price(), menu_time() {}
 };
 

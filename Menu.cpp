@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <sstream>
 #include "Menu.h"
 #include "Time.h"
 
@@ -15,11 +16,11 @@ void Menu::SetName(const std::string& name) {
     this->name = name;
 }
 
-std::string Menu::GetPrice() const {
+double Menu::GetPrice() const {
     return price;
 }
 
-void Menu::SetPrice(const std::string& price) {
+void Menu::SetPrice(const double& price) {
     this->price = price;
 }
 
@@ -32,28 +33,69 @@ void Menu::SetMenuTime(const Time& time) {
     menu_time.SetMinutes(time.GetMinutes());
 }
 
-std::vector<Menu> Menu::read(std::istream& in){
-    std::string input;
-    std::vector<Menu> menu_array;
-    while (std::getline(in, input, ' ')) {
-        Menu menu;
-        menu.SetName(input);
-        if (std::getline(in, input, ' ')) {
-            menu.SetPrice(input);
-            Time menu_time = Time::read(in);
-            menu.SetMenuTime(menu_time);
-            menu_array.emplace_back(menu);
+void Menu::ReadMenu(std::istream& in){
+    std::string input_name;
+    if (std::getline(in, input_name, ' ')) {
+        this->SetName(input_name);
+        double input_price;
+        if (in >> input_price) {
+            this->SetPrice(input_price);
+            Time menu_time;
+            menu_time.ReadTime(in);
+            this->SetMenuTime(menu_time);
             in.ignore();
         }
     }
-    return menu_array;
 }
 
-void Menu::write(Menu menu){
-    std::cout << "Íàçâàíèå áëşäà: " << menu.GetName() << std::endl;
-    std::cout << "Öåíà: " << menu.GetPrice() << std::endl;
-    Time menu_time = menu.GetMenuTime();
-    Time::write(menu_time);
+void Menu::WriteMenu() const{
+    std::cout << "Íàçâàíèå áëşäà: " << this->GetName() << std::endl;
+    std::cout << "Öåíà: " << this->GetPrice() << std::endl;
+    Time menu_time = this->GetMenuTime();
+    menu_time.WriteTime();
 }
 
-Menu::Menu(const std::string& n, const std::string& p, const Time& t) : name(n), price(p), menu_time(t) {}
+bool Menu::ValidateName(const std::string& name) {
+    std::string alphabet = "àáâãäå¸æçèéêëìíîïğñòóôõö÷øùúûüışÿ"
+        "ÀÁÂÃÄÅ¨ÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞß"
+        "0123456789"
+        "_";
+    for (char ch : name) {
+        if (alphabet.find(ch) == std::string::npos) {
+            return false;
+        }
+    }
+    return true;
+}
+
+void Menu::InvalidName(const std::string& name)
+{
+    std::string alphabet = "àáâãäå¸æçèéêëìíîïğñòóôõö÷øùúûüışÿ"
+        "ÀÁÂÃÄÅ¨ÆÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞß"
+        "0123456789"
+        "_";
+
+    if (name.empty() || !ValidateName(name) || name.find_first_not_of(alphabet) != std::string::npos) {
+        throw std::runtime_error("Invalid name!");
+    }
+    ValidateName(name);
+}
+
+bool Menu::ValidatePrice(const double& price)
+{
+    if (price <= 0) {
+        return false;
+    }
+    return true;
+}
+
+void Menu::InvalidPrice(const double& price)
+{
+    if (price < 0)
+    {
+        throw std::runtime_error("Invalid price!");
+    }
+    ValidatePrice(price);
+}
+
+Menu::Menu(const std::string& n, const double& p, const Time& t) : name(n), price(p), menu_time(t) {}

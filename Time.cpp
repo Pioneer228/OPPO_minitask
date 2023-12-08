@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Time.h"
-
+#include <sstream>
 
 void Time::SetMinutes(int minutes) {
 	mm = minutes;
@@ -19,20 +19,37 @@ int Time::GetHours() const {
 	return hh;
 }
 
-Time Time::read(std::istream& in)
+void Time::ReadTime(std::istream& in)
 {
-    Time time;
     int mm, hh;
     char colon =':';
-    if (in >> mm >> colon >> hh) {
-        time.SetMinutes(mm);
-        time.SetHours(hh);
+    if (in >> hh >> colon >> mm) {
+        this->SetMinutes(mm);
+        this->SetHours(hh);
     }
-    return time;
 }
 
-void Time::write(Time time){
-    std::cout << "Время приготовления: " << time.GetMinutes() << ":" << time.GetHours() << std::endl;
+void Time::WriteTime() const{
+    std::cout << "Время приготовления: " << this->GetHours() << ":" << this->GetMinutes() << std::endl;
+}
+
+bool Time::ValidateTime(const std::string& time) {
+    std::istringstream in(time);
+    int mm, hh;
+    char colon = ':';
+    in >> hh >> colon >> mm;
+    if (in.fail() || hh < 0 || hh > 23 || mm < 0 || mm > 60) {
+        return false;
+    }
+    return true;
+}
+
+void Time::InvalidTime(const std::string& time)
+{
+    if (time.empty() || !ValidateTime(time)) {
+        throw std::runtime_error("Invalid time!");
+    }
+    ValidateTime(time);
 }
 
 Time::Time(const int minutes, const int hours) : mm(minutes), hh(hours) {}
