@@ -22,7 +22,7 @@ struct Menu {
     void SetMenuTime(const Time& time);
 
     void ReadMenu(std::istream& in);
-    void WriteMenu() const;
+    void WriteMenu(std::ostream& ost = std::cout) const;
 
     static bool ValidateName(const std::string& name);
     static void InvalidName(const std::string& name);

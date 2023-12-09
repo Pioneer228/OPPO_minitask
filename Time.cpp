@@ -29,8 +29,8 @@ void Time::ReadTime(std::istream& in)
     }
 }
 
-void Time::WriteTime() const{
-    std::cout << "Время приготовления: " << this->GetHours() << ":" << this->GetMinutes() << std::endl;
+void Time::WriteTime(std::ostream& ost) const{
+    ost << "Время приготовления: " << this->GetHours() << ":" << this->GetMinutes() << std::endl;
 }
 
 bool Time::ValidateTime(const std::string& time) {

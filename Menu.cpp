@@ -48,15 +48,15 @@ void Menu::ReadMenu(std::istream& in){
     }
 }
 
-void Menu::WriteMenu() const{
-    std::cout << "Íאחגאםטו בכ‏הא: " << this->GetName() << std::endl;
-    std::cout << "Öוםא: " << this->GetPrice() << std::endl;
+void Menu::WriteMenu(std::ostream& ost) const{
+    ost << "Íאחגאםטו בכ‏הא: " << this->GetName() << std::endl;
+    ost << "Öוםא: " << this->GetPrice() << std::endl;
     Time menu_time = this->GetMenuTime();
-    menu_time.WriteTime();
+    menu_time.WriteTime(ost);
 }
 
 bool Menu::ValidateName(const std::string& name) {
-    std::string alphabet = "אבגדהו¸זחטיךכלםמןנסעףפץצקרשתûü‎‏ÿ"
+    static const std::string alphabet = "אבגדהו¸זחטיךכלםמןנסעףפץצקרשתûü‎‏ÿ"
         "ÀÁÂÃÄÅ¨ÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞ‗"
         "0123456789"
         "_";
@@ -70,7 +70,7 @@ bool Menu::ValidateName(const std::string& name) {
 
 void Menu::InvalidName(const std::string& name)
 {
-    std::string alphabet = "אבגדהו¸זחטיךכלםמןנסעףפץצקרשתûü‎‏ÿ"
+    static const std::string alphabet = "אבגדהו¸זחטיךכלםמןנסעףפץצקרשתûü‎‏ÿ"
         "ÀÁÂÃÄÅ¨ÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞ‗"
         "0123456789"
         "_";
