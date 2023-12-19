@@ -8,7 +8,6 @@
 
 
 std::vector<Menu> TxtToStruct(std::ifstream& in) {
-    std::string input;
     std::vector<Menu> menu_array;
     while (in) {
         Menu menu;

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="689611971650124525">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Read_Print.cpp" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Read_Print.cpp" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Read_Print.cpp" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Read_Print.cpp" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Read_Print.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Read_Print.h" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Time.h" line="3" column="0"/>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: input" verbose="Unused variable: input" cwe="563" file0="C:/Users/daad3/source/repos/OPPO_minitask/Read_Print.cpp">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Read_Print.cpp" line="11" column="17"/>
+            <symbol>input</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="TxtToStruct" lineNumber="10"/>
+    <functiondecl functionName="PrintStruct" lineNumber="21"/>
+    <functioncall functionName="Menu"/>
+    <functioncall functionName="ReadMenu"/>
+    <functioncall functionName="Time"/>
+    <functioncall functionName="WriteMenu"/>
+    <functioncall functionName="cout"/>
+    <functioncall functionName="emplace_back"/>
+  </FileInfo>
+</analyzerinfo>

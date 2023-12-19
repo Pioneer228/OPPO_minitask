@@ -1,0 +1,4 @@
+Time
+Menu
+TxtToStruct call:[ReadMenu,emplace_back] noreturn:[emplace_back]
+PrintStruct call:[WriteMenu] noreturn:[WriteMenu]

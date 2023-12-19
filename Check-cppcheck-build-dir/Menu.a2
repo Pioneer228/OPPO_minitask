@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="17718587081159943080">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.cpp" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.cpp" line="4" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.cpp" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.cpp" line="6" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Time.h" line="3" column="0"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;menu_time&apos; shadows outer variable" verbose="Local variable &apos;menu_time&apos; shadows outer variable" cwe="398" file0="C:/Users/daad3/source/repos/OPPO_minitask/Menu.cpp">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.cpp" line="43" column="18" info="Shadow variable"/>
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.h" line="10" column="7" info="Shadowed declaration"/>
+            <symbol>menu_time</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;menu_time&apos; shadows outer variable" verbose="Local variable &apos;menu_time&apos; shadows outer variable" cwe="398" file0="C:/Users/daad3/source/repos/OPPO_minitask/Menu.cpp">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.cpp" line="54" column="10" info="Shadow variable"/>
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Menu.h" line="10" column="7" info="Shadowed declaration"/>
+            <symbol>menu_time</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Menu" file="C:/Users/daad3/source/repos/OPPO_minitask/Menu.h" line="7" col="1" hash="11196208703796138243"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/daad3/source/repos/OPPO_minitask/Menu.h:22:10" my-argnr="1" my-argname="time" file="C:/Users/daad3/source/repos/OPPO_minitask/Menu.cpp" line="32" col="24" value="0"/>
+    <unsafe-usage my-id="C:/Users/daad3/source/repos/OPPO_minitask/Menu.h:25:10" my-argnr="1" my-argname="ost" file="C:/Users/daad3/source/repos/OPPO_minitask/Menu.cpp" line="52" col="5" value="0"/>
+    <unsafe-usage my-id="C:/Users/daad3/source/repos/OPPO_minitask/Menu.h:27:17" my-argnr="1" my-argname="name" file="C:/Users/daad3/source/repos/OPPO_minitask/Menu.cpp" line="63" col="20" value="0"/>
+    <unsafe-usage my-id="C:/Users/daad3/source/repos/OPPO_minitask/Menu.h:28:17" my-argnr="1" my-argname="name" file="C:/Users/daad3/source/repos/OPPO_minitask/Menu.cpp" line="78" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="GetName" lineNumber="11"/>
+    <functiondecl functionName="SetName" lineNumber="15"/>
+    <functiondecl functionName="GetPrice" lineNumber="19"/>
+    <functiondecl functionName="SetPrice" lineNumber="23"/>
+    <functiondecl functionName="GetMenuTime" lineNumber="27"/>
+    <functiondecl functionName="SetMenuTime" lineNumber="31"/>
+    <functiondecl functionName="ReadMenu" lineNumber="36"/>
+    <functiondecl functionName="WriteMenu" lineNumber="51"/>
+    <functiondecl functionName="ValidateName" lineNumber="58"/>
+    <functiondecl functionName="InvalidName" lineNumber="71"/>
+    <functiondecl functionName="ValidatePrice" lineNumber="84"/>
+    <functiondecl functionName="InvalidPrice" lineNumber="92"/>
+    <functioncall functionName="GetHours"/>
+    <functioncall functionName="GetMenuTime"/>
+    <functioncall functionName="GetMinutes"/>
+    <functioncall functionName="GetName"/>
+    <functioncall functionName="GetPrice"/>
+    <functioncall functionName="Menu"/>
+    <functioncall functionName="ReadTime"/>
+    <functioncall functionName="SetHours"/>
+    <functioncall functionName="SetMenuTime"/>
+    <functioncall functionName="SetMinutes"/>
+    <functioncall functionName="SetName"/>
+    <functioncall functionName="SetPrice"/>
+    <functioncall functionName="Time"/>
+    <functioncall functionName="ValidateName"/>
+    <functioncall functionName="ValidatePrice"/>
+    <functioncall functionName="WriteTime"/>
+    <functioncall functionName="cout"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="find_first_not_of"/>
+    <functioncall functionName="getline"/>
+    <functioncall functionName="ignore"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

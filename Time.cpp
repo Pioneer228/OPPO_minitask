@@ -21,11 +21,11 @@ int Time::GetHours() const {
 
 void Time::ReadTime(std::istream& in)
 {
-    int mm, hh;
+    int minutes, hours;
     char colon =':';
-    if (in >> hh >> colon >> mm) {
-        this->SetMinutes(mm);
-        this->SetHours(hh);
+    if (in >> hours >> colon >> minutes) {
+        this->SetMinutes(minutes);
+        this->SetHours(hours);
     }
 }
 

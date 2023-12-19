@@ -40,9 +40,9 @@ void Menu::ReadMenu(std::istream& in){
         double input_price;
         if (in >> input_price) {
             this->SetPrice(input_price);
-            Time menu_time;
-            menu_time.ReadTime(in);
-            this->SetMenuTime(menu_time);
+            Time local_menu_time;
+            local_menu_time.ReadTime(in);
+            this->SetMenuTime(local_menu_time);
             in.ignore();
         }
     }
@@ -51,8 +51,8 @@ void Menu::ReadMenu(std::istream& in){
 void Menu::WriteMenu(std::ostream& ost) const{
     ost << "Название блюда: " << this->GetName() << std::endl;
     ost << "Цена: " << this->GetPrice() << std::endl;
-    Time menu_time = this->GetMenuTime();
-    menu_time.WriteTime(ost);
+    Time local_menu_time = this->GetMenuTime();
+    local_menu_time.WriteTime(ost);
 }
 
 bool Menu::ValidateName(const std::string& name) {

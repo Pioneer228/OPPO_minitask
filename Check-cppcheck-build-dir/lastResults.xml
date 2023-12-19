@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.12.0"/>
+    <errors>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Menu.cpp" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Menu.cpp" line="4"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Menu.cpp" line="5"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;sstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;sstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Menu.cpp" line="6"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;menu_time&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;menu_time&amp;#039; shadows outer variable" cwe="398" file0="Menu.cpp" sinceDate="dd.MM.yyyy">
+            <location file="Menu.cpp" line="43" info="Shadow variable"/>
+            <location file="Menu.h" line="10" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;menu_time&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;menu_time&amp;#039; shadows outer variable" cwe="398" file0="Menu.cpp" sinceDate="dd.MM.yyyy">
+            <location file="Menu.cpp" line="54" info="Shadow variable"/>
+            <location file="Menu.h" line="10" info="Shadowed declaration"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;InvalidName&amp;#039; is never used." verbose="The function &amp;#039;InvalidName&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Menu.cpp" line="71"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;InvalidPrice&amp;#039; is never used." verbose="The function &amp;#039;InvalidPrice&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Menu.cpp" line="92"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Menu.h" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Time.h" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="OPPO_minitask.cpp" line="1"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;fstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;fstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="OPPO_minitask.cpp" line="2"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="OPPO_minitask.cpp" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="OPPO_minitask.cpp" line="4"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Read_Print.h" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;fstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;fstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Read_Print.h" line="4"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Read_Print.cpp" line="2"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Read_Print.cpp" line="3"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;string&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Read_Print.cpp" line="4"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;fstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;fstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Read_Print.cpp" line="5"/>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: input" verbose="Unused variable: input" cwe="563" file0="Read_Print.cpp" sinceDate="dd.MM.yyyy">
+            <location file="Read_Print.cpp" line="11"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;sstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;sstream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="Time.cpp" line="4"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;mm&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;mm&amp;#039; shadows outer variable" cwe="398" file0="Time.cpp" sinceDate="dd.MM.yyyy">
+            <location file="Time.cpp" line="24" info="Shadow variable"/>
+            <location file="Time.h" line="6" info="Shadowed declaration"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &amp;#039;hh&amp;#039; shadows outer variable" verbose="Local variable &amp;#039;hh&amp;#039; shadows outer variable" cwe="398" file0="Time.cpp" sinceDate="dd.MM.yyyy">
+            <location file="Time.cpp" line="24" info="Shadow variable"/>
+            <location file="Time.h" line="7" info="Shadowed declaration"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;InvalidTime&amp;#039; is never used." verbose="The function &amp;#039;InvalidTime&amp;#039; is never used." cwe="561" sinceDate="dd.MM.yyyy">
+            <location file="Time.cpp" line="47"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;iostream&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="UnitTest1\UnitTest1.cpp" line="5"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &amp;lt;vector&amp;gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." sinceDate="dd.MM.yyyy">
+            <location file="UnitTest1\UnitTest1.cpp" line="6"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="UnitTest1/UnitTest1.cpp" sinceDate="dd.MM.yyyy">
+            <location file="UnitTest1\UnitTest1.cpp" line="31"/>
+        </error>
+    </errors>
+</results>

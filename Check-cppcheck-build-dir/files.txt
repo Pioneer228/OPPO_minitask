@@ -1,0 +1,12 @@
+Menu.a1:Debug|x64:C:/Users/daad3/source/repos/OPPO_minitask/Menu.cpp
+Menu.a2:Release|x64:C:/Users/daad3/source/repos/OPPO_minitask/Menu.cpp
+OPPO_minitask.a1:Debug|x64:C:/Users/daad3/source/repos/OPPO_minitask/OPPO_minitask.cpp
+OPPO_minitask.a2:Release|x64:C:/Users/daad3/source/repos/OPPO_minitask/OPPO_minitask.cpp
+Read_Print.a1:Debug|x64:C:/Users/daad3/source/repos/OPPO_minitask/Read_Print.cpp
+Read_Print.a2:Release|x64:C:/Users/daad3/source/repos/OPPO_minitask/Read_Print.cpp
+Time.a1:Debug|x64:C:/Users/daad3/source/repos/OPPO_minitask/Time.cpp
+Time.a2:Release|x64:C:/Users/daad3/source/repos/OPPO_minitask/Time.cpp
+pch.a1:Debug|x64:C:/Users/daad3/source/repos/OPPO_minitask/UnitTest1/pch.cpp
+pch.a2:Release|x64:C:/Users/daad3/source/repos/OPPO_minitask/UnitTest1/pch.cpp
+UnitTest1.a1:Debug|x64:C:/Users/daad3/source/repos/OPPO_minitask/UnitTest1/UnitTest1.cpp
+UnitTest1.a2:Release|x64:C:/Users/daad3/source/repos/OPPO_minitask/UnitTest1/UnitTest1.cpp

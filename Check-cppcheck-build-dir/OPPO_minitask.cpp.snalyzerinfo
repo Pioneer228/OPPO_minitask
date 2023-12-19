@@ -1,0 +1,3 @@
+Time
+Menu
+main call:[PrintStruct,TxtToStruct,close,in,setlocale] noreturn:[close]

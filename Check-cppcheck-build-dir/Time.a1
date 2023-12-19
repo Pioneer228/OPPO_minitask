@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="4099404743216725370">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Time.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Time.cpp" line="4" column="0"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;mm&apos; shadows outer variable" verbose="Local variable &apos;mm&apos; shadows outer variable" cwe="398" file0="C:/Users/daad3/source/repos/OPPO_minitask/Time.cpp">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Time.cpp" line="24" column="9" info="Shadow variable"/>
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Time.h" line="6" column="6" info="Shadowed declaration"/>
+            <symbol>mm</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;hh&apos; shadows outer variable" verbose="Local variable &apos;hh&apos; shadows outer variable" cwe="398" file0="C:/Users/daad3/source/repos/OPPO_minitask/Time.cpp">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Time.cpp" line="24" column="13" info="Shadow variable"/>
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\Time.h" line="7" column="6" info="Shadowed declaration"/>
+            <symbol>hh</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Time" file="C:/Users/daad3/source/repos/OPPO_minitask/Time.h" line="5" col="1" hash="2200241864966567766"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/daad3/source/repos/OPPO_minitask/Time.h:15:7" my-argnr="1" my-argname="in" file="C:/Users/daad3/source/repos/OPPO_minitask/Time.cpp" line="26" col="9" value="0"/>
+    <unsafe-usage my-id="C:/Users/daad3/source/repos/OPPO_minitask/Time.h:16:7" my-argnr="1" my-argname="ost" file="C:/Users/daad3/source/repos/OPPO_minitask/Time.cpp" line="33" col="5" value="0"/>
+    <unsafe-usage my-id="C:/Users/daad3/source/repos/OPPO_minitask/Time.h:19:14" my-argnr="1" my-argname="time" file="C:/Users/daad3/source/repos/OPPO_minitask/Time.cpp" line="49" col="9" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="SetMinutes" lineNumber="6"/>
+    <functiondecl functionName="SetHours" lineNumber="10"/>
+    <functiondecl functionName="GetMinutes" lineNumber="14"/>
+    <functiondecl functionName="GetHours" lineNumber="18"/>
+    <functiondecl functionName="ReadTime" lineNumber="22"/>
+    <functiondecl functionName="WriteTime" lineNumber="32"/>
+    <functiondecl functionName="ValidateTime" lineNumber="36"/>
+    <functiondecl functionName="InvalidTime" lineNumber="47"/>
+    <functioncall functionName="GetHours"/>
+    <functioncall functionName="GetMinutes"/>
+    <functioncall functionName="SetHours"/>
+    <functioncall functionName="SetMinutes"/>
+    <functioncall functionName="Time"/>
+    <functioncall functionName="ValidateTime"/>
+    <functioncall functionName="cout"/>
+    <functioncall functionName="empty"/>
+    <functioncall functionName="fail"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="in"/>
+    <functioncall functionName="runtime_error"/>
+    <functioncall functionName="true"/>
+  </FileInfo>
+</analyzerinfo>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="4442702241945805849">
+        <error id="missingInclude" severity="information" msg="Include file: &quot;CppUnitTest.h&quot; not found." verbose="Include file: &quot;CppUnitTest.h&quot; not found.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\UnitTest1\UnitTest1.cpp" line="2" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="\Users\daad3\source\repos\OPPO_minitask\Time.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="\Users\daad3\source\repos\OPPO_minitask\Menu.h" line="3" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\UnitTest1\UnitTest1.cpp" line="5" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;vector&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\UnitTest1\UnitTest1.cpp" line="6" column="0"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error" file0="C:/Users/daad3/source/repos/OPPO_minitask/UnitTest1/UnitTest1.cpp">
+            <location file="C:\Users\daad3\source\repos\OPPO_minitask\UnitTest1\UnitTest1.cpp" line="31" column="3"/>
+        </error>
+</analyzerinfo>

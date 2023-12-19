@@ -1,0 +1,15 @@
+Time
+Menu
+GetName
+SetName
+GetPrice
+SetPrice
+GetMenuTime
+SetMenuTime call:[GetHours,GetMinutes,SetHours,SetMinutes] noreturn:[SetMinutes]
+ReadMenu call:[ReadTime,SetMenuTime,SetName,SetPrice,getline,ignore] noreturn:[ignore]
+WriteMenu call:[GetMenuTime,GetName,GetPrice,WriteTime] noreturn:[WriteTime]
+ValidateName call:[find]
+InvalidName call:[ValidateName,empty,find_first_not_of,runtime_error] noreturn:[ValidateName,runtime_error]
+ValidatePrice
+InvalidPrice call:[ValidatePrice,runtime_error] noreturn:[ValidatePrice,runtime_error]
+Menu

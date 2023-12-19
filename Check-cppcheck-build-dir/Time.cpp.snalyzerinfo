@@ -1,0 +1,10 @@
+Time
+SetMinutes
+SetHours
+GetMinutes
+GetHours
+ReadTime call:[SetHours,SetMinutes] noreturn:[SetHours]
+WriteTime call:[GetHours,GetMinutes]
+ValidateTime call:[fail,in]
+InvalidTime call:[ValidateTime,empty,runtime_error] noreturn:[ValidateTime,runtime_error]
+Time

@@ -1,0 +1,9 @@
+@startuml
+Menu -> Name
+Menu -> Price
+Menu : - time: Time
+Menu : ReadMenu()
+Menu : WriteMenu()
+
+
+@enduml
